@@ -1,7 +1,7 @@
 <?php
 $table = "getpenugasandosen";
-$methodfeed = "GetDosen";
-$countneofeedermethod = "GetCountDosen";
+$methodfeed = "GetPenugasanDosen";
+$countneofeedermethod = "GetCountPenugasanSemuaDosen";
 $exec = "getPenugasanDosen";
 
 $jumlah = "SELECT COUNT(*) as jumlah FROM ".$table;
@@ -43,7 +43,7 @@ $sync = $weburl.'/exec.php?act='.$exec;
                             </button></a>
                             <br>
                             *sumber data di neo-integrator<br>
-                            abaikan jika ada selisih, karena Data diambil dari <code>DetailBiodataDosen</code> dan jumlah data dari method <code><?php echo $countneofeedermethod;?></code>
+                            abaikan jika ada selisih, karena Data diambil dari <code>DetailPenugasanDosen</code> dan jumlah data dari method <code><?php echo $countneofeedermethod;?></code>
                         </div>
 
 
