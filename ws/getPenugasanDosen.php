@@ -89,8 +89,8 @@ $request = $ws->prep_get($act,"",$limit,0);
 // 	echo "data tidak ditemukan";
 // }
 
-
-
-
+echo $no." record";
+$status =  "Get Data Terakhir Selesai";
+progress($status,$act);
 
 ?>
