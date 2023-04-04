@@ -9,7 +9,7 @@ $request = $ws->prep_get($act,$filter,$limit,$order);
 
 $kosongkantabel = "TRUNCATE getDosen;";
 mysqli_query($db ,$kosongkantabel);
-
+$no=0;
 if ($ws_result[1]["error_code"] == 0) {
 
 			foreach ($ws_result as $key){
@@ -70,6 +70,7 @@ if ($ws_result[1]["error_code"] == 0) {
 								
 // 								$nama_mata_kuliah = $key3['nama_mata_kuliah'];
 // 								$nama_mata_kuliah = ucwords(strtoupper(str_ireplace($cari_huruf, $huruf_baru, $nama_mata_kuliah)));
+								$no++;
 								
 								
 $insert = "INSERT INTO getdosen 
